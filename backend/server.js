@@ -4,7 +4,9 @@ const cloudinary = require("cloudinary");
 const dotenv = require("dotenv");
 
 // Load environment variables from backend/config/.env
-dotenv.config({ path: "./config/.env" });
+// dotenv.config({ path: "./config/.env" });
+
+dotenv.config({ path: "./backend/config/.env" });
 
 
 
@@ -28,9 +30,9 @@ cloudinary.config({
 // Start Server
 const PORT = process.env.PORT || 8000;
 const server = app.listen(PORT, () => {
-  console.log(`✅ Server is running on http://localhost:${PORT}`);
-  console.log(`🌍 PORT = ${process.env.PORT}`);
-  console.log(`📦 MONGO_URI present? ${!!process.env.MONGO_URI}`);
+  console.log(` Server is running on http://localhost:${PORT}`);
+  console.log(` PORT = ${process.env.PORT}`);
+  console.log(` MONGO_URI present? ${!!process.env.MONGO_URI}`);
 });
 
 // Handle unhandled promise rejections
