@@ -4,11 +4,7 @@ const cloudinary = require("cloudinary");
 const dotenv = require("dotenv");
 
 // Load environment variables from backend/config/.env
-// dotenv.config({ path: "./config/.env" });
-
-dotenv.config({ path: "./backend/config/.env" });
-
-
+dotenv.config({ path: "./config/.env" });
 
 // Handling uncaught exceptions
 process.on("uncaughtException", (err) => {
