@@ -8,7 +8,7 @@ export const navItems = [
   { title: "FAQ", url: "/faq" },
 ];
 
-// branding data
+// branding data from here
 export const brandingData = [
   {
     id: 1,
